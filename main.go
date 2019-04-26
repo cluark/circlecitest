@@ -1,7 +1,7 @@
 package main
 
 import (
-  "github.com/cluark/circletestprivate/lib"
+  "github.com/cluark/circlecitestprivate/lib"
 )
 
 func main() {
