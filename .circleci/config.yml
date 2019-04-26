@@ -15,8 +15,7 @@ jobs:
           command: "containerize.sh -p"
 
 workflows:
-  version: 2
   build_docker_image:
     jobs:
       - ctrz:
-context: ecr
+          context: ecr
