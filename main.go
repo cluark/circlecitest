@@ -1,9 +1,9 @@
 package main
 
 import (
-  "github.com/cluark/circlecitestprivate/lib"
+	lib "github.com/cluark/circlecitestprivate"
 )
 
 func main() {
-	println("secret number: %v", lib.GetSecretNumber())
+	println("secret number: ", lib.GetSecretNumber())
 }
