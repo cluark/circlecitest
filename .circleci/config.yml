@@ -18,4 +18,4 @@ workflows:
   build_docker_image:
     jobs:
       - ctrz:
-          context: ecr
+          context: test
