@@ -1,7 +1,8 @@
 FROM golang:1.12.1-stretch
+ARG GITHUB_ACCESS_TOKEN
 RUN mkdir /build
-COPY cmd /build/cmd
+COPY *.go /build/
 COPY go.mod /build/
 COPY go.sum /build/
-RUN cd /build && go mod vendor && go build ./cmd/...
+RUN git config --global url.https://$GITHUB_ACCESS_TOKEN@github.com/.insteadOf https://github.com/ && cd /build && go mod vendor && go build . && rm /root/.gitconfig
 ENTRYPOINT "bash"
