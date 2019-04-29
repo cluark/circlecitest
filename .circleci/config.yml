@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   ctrz:
     docker:
-      - image: 081522272738.dkr.ecr.us-west-2.amazonaws.com/michael-scheetz/containerize:latest
+      - image: 081522272738.dkr.ecr.us-west-1.amazonaws.com/chris-luark/containerize:latest
         aws_auth:
           aws_access_key_id: $AWS_ACCESS_KEY_ID
           aws_secret_access_key: $AWS_SECRET_ACCESS_KEY
